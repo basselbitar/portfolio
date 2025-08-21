@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "eurostile", sans-serif;
 }
 
 header {
@@ -38,7 +39,7 @@ header {
 } */
 
 .circular-pic {
-    background-image: url('./Bassel.png');
+    background-image: url('./assets/images/Bassel.png');
     height: 150px;
     width: 150px;
     background-repeat: no-repeat;
@@ -122,4 +123,61 @@ header {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/* Recent Work Section */
+.recent-work {
+  margin: 4rem auto 0 auto;
+  max-width: 1200px;
+  min-height: 200px;
+  text-align: center;
+}
+
+.recent-work-header {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.recent-work-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.recent-work-desc {
+  font-size: 1.15rem;
+  margin-bottom: 2.5rem;
+  color: #333;
+}
+.recent-work-desc a {
+  color: #3f51b5;
+  text-decoration: underline;
+}
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+.work-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 16/10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.work-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 32px rgba(63,81,181,0.13);
 }

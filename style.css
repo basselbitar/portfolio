@@ -5,12 +5,12 @@
     font-family: "eurostile", sans-serif;
 }
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
 }
 
-.header-links {
+.header__links {
     display: flex;
     gap: 20px;
     align-items: center;
@@ -32,13 +32,7 @@ header {
     margin-top: 20px;
 }
 
-/* #profile-pic {
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-} */
-
-.circular-pic {
+.profile--circular-pic {
     background-image: url('./assets/images/Bassel.png');
     height: 150px;
     width: 150px;
@@ -64,7 +58,7 @@ header {
     
 }
 
-.about .heading {
+.about__heading {
     font-size: 2rem;
     margin-top: 20px;
     color: white;
@@ -76,7 +70,7 @@ header {
     color: white;
 }
 
-.skills-container {
+.skills__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -88,7 +82,7 @@ header {
     margin: -2rem auto;
     max-width: 1200px;
 }
-.skill-card {
+.skills__card {
     flex: 1 1 300px;
     max-width: 350px;
     background: #fff;
@@ -97,29 +91,30 @@ header {
     text-align: center;
     box-shadow: 0 1px 6px rgba(0,0,0,0.03);
 }
-.skill-icon {
+.skills__icon {
     margin-bottom: 1rem;
 }
-.skill-card h3 {
+.skills__header {
     margin: 0.5rem 0 1rem 0;
     font-size: 1.4rem;
 }
-.skill-card .highlight {
+.skills__highlight {
     color: #8f3fff;
     font-weight: 600;
     margin-top: 1rem;
     margin-bottom: 0.2rem;
 }
-.skill-card ul {
+.skills__list {
     list-style: none;
     padding: 0;
     margin: 0.2rem 0 0 0;
 }
-.skill-card ul li {
+.skills__item {
     margin: 0.2rem 0;
 }
+
 @media (max-width: 900px) {
-    .skills-container {
+    .skills__container {
         flex-direction: column;
         align-items: center;
     }
@@ -133,32 +128,33 @@ header {
   text-align: center;
 }
 
-.recent-work-header {
+.recent-work__header {
   margin-top: 8rem;
   margin-bottom: 8rem;
 }
 
-.recent-work-title {
+.recent-work__title {
   font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
-.recent-work-desc {
+.recent-work__desc {
   font-size: 1.15rem;
   margin-bottom: 2.5rem;
   color: #333;
 }
-.recent-work-desc a {
+
+.recent-work__email {
   color: #3f51b5;
   text-decoration: underline;
 }
-.work-grid {
+.recent-work__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
   justify-items: center;
 }
-.work-card {
+.recent-work__card {
   background: #fff;
   border-radius: 18px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.07);
@@ -171,13 +167,13 @@ header {
   align-items: center;
   justify-content: center;
 }
-.work-card img {
+.recent-work__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-.work-card:hover {
+.recent-work__card:hover {
   transform: translateY(-6px) scale(1.03);
   box-shadow: 0 6px 32px rgba(63,81,181,0.13);
 }
